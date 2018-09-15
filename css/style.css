@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 
+/* CSS var */
+
+:root {
+  --pramary-color: #b90415;
+  --pramary-color-hover: #b3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: #f4f4f4;
+}
+
 body {
     font-family: "PT Sans", sans-serif;
     background-color: #252529;
@@ -15,14 +25,17 @@ body {
     color: #eee;
     position: fixed;
   }
+
   nav ul {
     padding: 0;
     margin: 0;
   }
+  
   nav li {
     display: inline;
     float: left;
   }
+
   nav a {
     display: inline-block;
     width: 100px;
@@ -32,11 +45,22 @@ body {
     color: #eee;
     text-decoration: none;
   }
+  
   nav li:hover {
     background-color: #444;
   }
+
   nav a#openup {
     display: none;
+  }
+
+  img {
+    width: 100%
+  }
+
+  a {
+    text-decoration: none;
+    color: #ccc;
   }
   
   @media screen and (max-width: 580px) {
@@ -151,4 +175,72 @@ body {
     .lead {
         font-size: 1.3em;
     }
+
+    /*Music */
+    .section {
+      padding: 2rem 0;
+    }
+
+    .section-head {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+    }
+
+    .btn {
+      padding: 1rem;
+      color: #fff;
+      display: inline-block;
+    }
+
+    /* btn classes*/
+    .btn-primary {
+      background-color: var(--pramary-color)
+    }
+
+    .btn-primary:hover {
+      background-color: var(--pramary-color-hover)
+    }
+
+    .btn-secondary {
+      background-color: var(--secondary-color)
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--secondary-color-hover)
+    }
+
+    /* Text colors */ 
+    .text-primary {
+      color: var(--pramary-color);
+    }
+
+    .text-secondary {
+      color: var(--secondary-color);
+    }
+
+    .text-light {
+      margin-bottom: 1rem;
+    }
+
+
+    .mb {
+      margin-bottom: 1rem;
+    }
+
+    .mt {
+      margin-top: 1rem;
+    }
+
+    .bg-light {
+      background: var(--light-color);
+      color: #333;
+    }
+
+
+
+
   
